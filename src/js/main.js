@@ -1,3 +1,6 @@
+let inputMessage = document.getElementById('message');
+let chatBoard = document.getElementById("chatBoard");
+
 Telegram.WebApp.ready();
 const mainButton = window.Telegram.WebApp.MainButton;
 mainButton.text = "ПРОДОЛЖИТЬ";
@@ -66,7 +69,7 @@ function addNewMessage(userId, message, messageContainerClass) {
     messageBubble.appendChild(contextSpan);
     messageContext.appendChild(messageBubble)
     messageContainer.appendChild(messageContext);
-
+    console.log(message);
     // chatBoard.appendChild(messageContainer);
     chatBoard.insertBefore(messageContainer, chatBoard.firstChild);
 
