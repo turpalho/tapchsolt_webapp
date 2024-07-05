@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Jost&family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <title>Регистрация</title>
+  </head>
+  <body>
+    <!-- <center>
+      <div class="container">
+        <div id="main">
+          <div id="main-sections">
+            <h2>Тапчсолт</h2>
+            <form class="center_form" action="/submit" method="post">
+              <div>
+                <input
+                  class="right"
+                  type="text"
+                  id="first_name"
+                  name="first_name"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </center> -->
+    <div class="--dark-theme" id="chat">
+      <h1 class="chat__conversation-panel__input2">Тапчсолт</h1>
+
+      <div class="chat-board" id="chatBoard"></div>
+
+      <div class="chat__conversation-panel">
+        <div class="chat__conversation-panel__container">
+          <button
+            class="chat__conversation-panel__button panel-item btn-icon add-file-button"
+            onclick="toggleUserMenu()"
+          >
+            <svg
+              class="feather feather-plus sc-dnqmqq jxshSx"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <input
+            id="message"
+            class="chat__conversation-panel__input panel-item"
+            placeholder="Type a message..."
+          />
+          <button
+            onclick="sendMessage()"
+            class="chat__conversation-panel__button panel-item btn-icon send-message-button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              data-reactid="1036"
+            >
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/query.min.js"></script>
+  </body>
+</html>
